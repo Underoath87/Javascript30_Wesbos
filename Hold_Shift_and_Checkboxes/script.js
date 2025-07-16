@@ -17,7 +17,7 @@ const handleCheck = function (e) {
       }
       // If the checkbox is between the last checked and the current checkbox, check it
       if (inBetween) {
-        checkbox.checked = true;
+        checkbox.checked = false;
       }
     });
   }
@@ -31,3 +31,9 @@ checkboxes.forEach((checkbox) =>
 );
 
 console.log("Hi There");
+
+const newFeature = function () {
+  console.log("Welcome to the new application");
+};
+
+newFeature();
