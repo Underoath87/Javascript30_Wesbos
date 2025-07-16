@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkboxes</title>
+  </head>
+  <style>
+    html {
+      font-family: sans-serif;
+      background: skyblue;
+    }
+
+    .inbox {
+      max-width: 400px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 10 10 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .item:last-child {
+      border-bottom: 0;
+    }
+
+    /* .input:checked + p {
+      background: #f9f9f9;
+      text-decoration: line-through;
+    } */
+    .strike-through {
+      background: #f9f9f9;
+      text-decoration: line-through;
+    }
+
+    input[type="checkbox"] {
+      margin: 20px;
+    }
+
+    p {
+      margin: 0;
+      padding: 20px;
+      transition: background 0.2s;
+      flex: 1;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode";
+      font-size: 20px;
+      font-weight: 200;
+      border-left: 1px solid #d1e2ff;
+    }
+  </style>
+  <body>
+    <!--
+   The following is a common layout you would see in an email client.
+
+   When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes in-between those two checkboxes should be checked.
+
+  -->
+    <div class="inbox">
+      <div class="item">
+        <input type="checkbox" />
+        <p>Lebron James</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Stephen Curry</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Kevin Durant</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Russel Wesbrook</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Nikola Jokic</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Giannis Antetoukunpo</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>James Harden</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Kawhi leonard</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Paul George</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
